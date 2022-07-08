@@ -1,0 +1,12 @@
+conecatar local
+docker build -t produtos-db .
+docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=teste -e MYSQL_DATABASE=Produtos -e MYSQL_USER=root -e MYSQL_PASSWORD=teste produtos-db
+docker exec -it c75d8aae80ce  bash
+mysql -uroot -p
+
+rodar imagem dockerfile mysql
+módulos instalados
+  pip install python-barcode 
+  pip instalar pillow
+  pip install mysql-connector-python
+
